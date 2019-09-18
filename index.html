@@ -2,23 +2,82 @@
 <html>
 <head>
 <style>
+
+/*body {
+	padding: 100px 500px;
+	border-radius: 50px;
+	border: 10px;
+  border-color: rgb(35,91,200);
+}*/
+
+#outDiv {
+  padding: 100px 500px;
+  ackground-color: rgb(35,91,200);
+}
+
+#Div {
+  background-color: rgb(252,236,217);
+  padding: 30px 40px;
+  font-size: 20px;
+  font-family: "arial";
+  color: rgb(35,91,200);
+  text-align: center;
+  /*border: 10px;*/
+}
+
+input {
+	/*padding: 10px;*/
+	/*width: 15%;*/
+	/*text-align: center;*/
+  font-size: 20px;
+	/*border-radius: 10;*/
+}
+button {
+	font-size: 20px;
+	background-color: rgb(35,91,200);
+	color: white;
+
+}
+input::-webkit-input-placeholder{
+	border-color: rgb(35,91,200);
+/*	border: 20px;
+  color:rgb(193,193,193);*/
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+  color:rgb(193,193,193);
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+  color:rgb(193,193,193);
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+  color:rgb(193,193,193);
+}
+
 </style>
 </head>
 <body>
-<div id="myDIV" class="header">
-  <h2>My To Do List</h2>
-  <input type="text" id="myInput" placeholder="Title...">
-  <span>Add</span>
+
+<div id="outDiv">
+	<div id="Div">
+  <span>First Name</span>
+  <input type="text" id="firstNameInput" class="inputBox" placeholder="First Name">
+  <p></p>
+  <span>Last Name</span>
+  <input type="text" id="lastNameInput" class="inputBox" placeholder="Last Name">
+  <p></p>
+  <span>Email Address</span>
+  <input type="text" id="emailInput" class="inputBox" placeholder="Email Address">
+  <p></p>
+  <span>Notes</span>
+  <input type="text" id="noteInput" class="inputBox" placeholder="">
+  <p></p>
+  <button>Register</button>
+  <p></p>
+  <span id="registerBut">This is where error or success message will display.</span>
+</div>
 </div>
 
-<ul id="myUL">
-  <li>Hit the gym</li>
-  <li>Pay bills</li>
-  <li>Meet George</li>
-  <li>Buy eggs</li>
-  <li>Read a book</li>
-  <li>Organize office</li>
-</ul>
+
 </body>
 
 <script>
