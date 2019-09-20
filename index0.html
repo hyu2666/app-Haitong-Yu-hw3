@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+	padding: 100px 500px;
+}
+
+#innerDiv {
+	/*height:400px;
+	width: :300px;*/
+  background-color: rgb(252,236,217);
+  padding: 30px 40px;
+	border:5px solid rgb(35,91,200);
+	border-radius: 10px;
+  font-size: 20px;
+  font-family: "arial";
+  color: rgb(35,91,200);
+  text-align: right;
+}
+
+#errorInfo {
+	color: black;
+	text-align: center;
+}
+
+input {
+  font-size: 20px;
+  border:1px solid rgb(86,120,61);
+}
+button {
+	font-size: 20px;
+	background-color: rgb(35,91,200);
+	color: white;
+	align: center;
+}
+input::-webkit-input-placeholder{
+	border-color: rgb(35,91,200);
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+  color:rgb(193,193,193);
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+  color:rgb(193,193,193);
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+  color:rgb(193,193,193);
+}
+
+</style>
+</head>
+<body>
+
+<div id="innerDiv">
+	
+	<span>First Name</span>
+  <input type="text" id="firstNameInput" placeholder="First Name">
+  <p></p>
+
+  <span>Last Name</span>
+  <input type="text" id="lastNameInput" placeholder="Last Name">
+  <p></p>
+
+	<span>Email Address</span>
+	<input type="text" id="emailInput" placeholder="Email Address">
+	<p></p>
+
+	<span>Notes</span>
+	<input type="text" id="noteInput" placeholder="" style="height:100px;">
+	<p></p>
+
+	<div align="center"><button>Register</button></div>
+  <p></p>
+  <p id="errorInfo">This is where error or success message will display.</p>
+</div>
+
+
+</body>
+
+<script>
+</script>
+
+</html>
